@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Batman-Themed Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+</head>
+<body>
+  <div id="parallax-bg">
+    <div class="layer" id="layer1"></div>
+    <div class="layer" id="layer2"></div>
+    <div class="layer" id="layer3"></div>
+  </div>
+
+  <div class="content">
+    <header>
+      <h1>Dark Knight Edits</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#about" onclick="triggerBatTransition()">About Me</a></li>
+        <li><a href="#projects" onclick="triggerBatTransition()">Projects</a></li>
+        <li><a href="#contact" onclick="triggerBatTransition()">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Professional video editor, 3D animator, and web designer inspired by the shadow of Gotham.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-item">Project 1: Gotham Cityscape Animation</div>
+      <div class="project-item">Project 2: Dark Knight Trailer Edit</div>
+      <div class="project-item">Project 3: Video Editing Reel</div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Get in touch for project inquiries!</p>
+      <form>
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <textarea placeholder="Your message..."></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </div>
+
+  <div id="bats-transition"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
